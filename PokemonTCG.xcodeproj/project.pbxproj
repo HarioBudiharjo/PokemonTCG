@@ -20,6 +20,7 @@
 		00E76B922A80114600737136 /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00E76B902A80114600737136 /* SearchVC.xib */; };
 		00E76B952A80115800737136 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E76B932A80115800737136 /* DetailVC.swift */; };
 		00E76B962A80115800737136 /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00E76B942A80115800737136 /* DetailVC.xib */; };
+		8C2034D1CD1095F0E77073C7 /* Pods_PokemonTCG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4194233DC0BC95A8A6EB53C5 /* Pods_PokemonTCG.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,9 @@
 		00E76B902A80114600737136 /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
 		00E76B932A80115800737136 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		00E76B942A80115800737136 /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
+		4194233DC0BC95A8A6EB53C5 /* Pods_PokemonTCG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemonTCG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F58A5E809CB4500832CF4B /* Pods-PokemonTCG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonTCG.release.xcconfig"; path = "Target Support Files/Pods-PokemonTCG/Pods-PokemonTCG.release.xcconfig"; sourceTree = "<group>"; };
+		82F830D1A67147B0044543FE /* Pods-PokemonTCG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonTCG.debug.xcconfig"; path = "Target Support Files/Pods-PokemonTCG/Pods-PokemonTCG.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C2034D1CD1095F0E77073C7 /* Pods_PokemonTCG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,8 @@
 			children = (
 				00E76B6D2A7FF44400737136 /* PokemonTCG */,
 				00E76B6C2A7FF44400737136 /* Products */,
+				4D4C99EED5DA6827C19AB874 /* Pods */,
+				7D4A116A6A188D9768565DE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +119,24 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		4D4C99EED5DA6827C19AB874 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82F830D1A67147B0044543FE /* Pods-PokemonTCG.debug.xcconfig */,
+				66F58A5E809CB4500832CF4B /* Pods-PokemonTCG.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7D4A116A6A188D9768565DE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4194233DC0BC95A8A6EB53C5 /* Pods_PokemonTCG.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E76B7F2A7FF44600737136 /* Build configuration list for PBXNativeTarget "PokemonTCG" */;
 			buildPhases = (
+				60FD5628B7D606C253DD1301 /* [CP] Check Pods Manifest.lock */,
 				00E76B672A7FF44400737136 /* Sources */,
 				00E76B682A7FF44400737136 /* Frameworks */,
 				00E76B692A7FF44400737136 /* Resources */,
+				0B1D54809EB58F21DD263C84 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +207,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B1D54809EB58F21DD263C84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokemonTCG/Pods-PokemonTCG-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokemonTCG/Pods-PokemonTCG-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PokemonTCG/Pods-PokemonTCG-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60FD5628B7D606C253DD1301 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PokemonTCG-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00E76B672A7FF44400737136 /* Sources */ = {
@@ -326,6 +395,7 @@
 		};
 		00E76B802A7FF44600737136 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82F830D1A67147B0044543FE /* Pods-PokemonTCG.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -355,6 +425,7 @@
 		};
 		00E76B812A7FF44600737136 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66F58A5E809CB4500832CF4B /* Pods-PokemonTCG.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
