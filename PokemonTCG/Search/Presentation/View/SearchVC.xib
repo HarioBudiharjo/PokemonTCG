@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchVC" customModule="PokemonTCG" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="S0V-xr-7hB" id="hVs-nq-KSn"/>
+                <outlet property="segmenControl" destination="XCg-ab-Jrh" id="qsu-un-yfU"/>
+                <outlet property="tableView" destination="FLa-At-hW6" id="StW-X1-RGq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,8 +32,9 @@
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XCg-ab-Jrh">
                     <rect key="frame" x="16" y="72" width="343" height="32"/>
                     <segments>
-                        <segment title="First"/>
-                        <segment title="Second"/>
+                        <segment title="Name"/>
+                        <segment title="Types"/>
+                        <segment title="Envolves From"/>
                     </segments>
                 </segmentedControl>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FLa-At-hW6">

@@ -11,6 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailVC" customModule="PokemonTCG" customModuleProvider="target">
             <connections>
+                <outlet property="abillitiesLabel" destination="Vjr-ow-07N" id="KfD-od-uyS"/>
+                <outlet property="attackLabel" destination="0g1-l2-faX" id="vA2-9X-2eE"/>
+                <outlet property="nameLabel" destination="LUh-8p-7sQ" id="pNT-EJ-o9M"/>
+                <outlet property="pokemonImage" destination="J0J-vE-S8V" id="sbi-ia-VgT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -32,15 +36,51 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bap-UR-Wre">
+                    <rect key="frame" x="16" y="361" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0g1-l2-faX">
+                    <rect key="frame" x="16" y="398" width="343" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abilities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQs-gA-SCp">
+                    <rect key="frame" x="16" y="434.5" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjr-ow-07N">
+                    <rect key="frame" x="16" y="471.5" width="343" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="LUh-8p-7sQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="1lg-op-Tid"/>
                 <constraint firstItem="J0J-vE-S8V" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="4rl-Sk-5IH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Vjr-ow-07N" secondAttribute="trailing" constant="16" id="6op-57-mdX"/>
+                <constraint firstItem="zQs-gA-SCp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="8Xm-Ut-MdU"/>
+                <constraint firstItem="Vjr-ow-07N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="9mJ-0g-DUg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0g1-l2-faX" secondAttribute="trailing" constant="16" id="9nc-bg-LrS"/>
+                <constraint firstItem="Bap-UR-Wre" firstAttribute="top" secondItem="LUh-8p-7sQ" secondAttribute="bottom" constant="8" symbolic="YES" id="Lra-rJ-sVA"/>
+                <constraint firstItem="0g1-l2-faX" firstAttribute="top" secondItem="Bap-UR-Wre" secondAttribute="bottom" constant="16" id="MnT-ES-Y1v"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LUh-8p-7sQ" secondAttribute="trailing" constant="16" id="UcJ-wm-Eby"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bap-UR-Wre" secondAttribute="trailing" constant="16" id="WoL-dA-aIk"/>
+                <constraint firstItem="Vjr-ow-07N" firstAttribute="top" secondItem="zQs-gA-SCp" secondAttribute="bottom" constant="16" id="caD-CN-S82"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zQs-gA-SCp" secondAttribute="trailing" constant="16" id="flh-dH-NqE"/>
+                <constraint firstItem="Bap-UR-Wre" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="lvb-nS-iPY"/>
                 <constraint firstItem="LUh-8p-7sQ" firstAttribute="top" secondItem="J0J-vE-S8V" secondAttribute="bottom" constant="16" id="olA-il-Bx7"/>
                 <constraint firstItem="J0J-vE-S8V" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="sAZ-Em-ElK"/>
+                <constraint firstItem="zQs-gA-SCp" firstAttribute="top" secondItem="0g1-l2-faX" secondAttribute="bottom" constant="16" id="txf-uO-OHf"/>
+                <constraint firstItem="0g1-l2-faX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="zXl-Hb-vWc"/>
             </constraints>
             <point key="canvasLocation" x="-73" y="-11"/>
         </view>

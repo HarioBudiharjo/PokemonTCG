@@ -20,3 +20,7 @@ struct PokemonData {
     let pokemons: [ListPokemon]
     let page: PageModel
 }
+
+struct PokemonDetail {
+    let id, name, abilities, attack, image: String
+}
